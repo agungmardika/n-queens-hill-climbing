@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi N-Queens - Hill Climbing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Simulasi 8-Queens Problem</h1>
+            <p>Penyelesaian menggunakan Algoritma <strong>Hill Climbing</strong></p>
+        </div>
+
+        <!-- Area untuk Haikal mengupdate angka dari perhitungan Habi -->
+        <div class="dashboard">
+            <div class="stat-box">
+                <span class="label">Jumlah Bentrok (Cost):</span>
+                <span id="cost-value" class="value">-</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">Iterasi:</span>
+                <span id="iterasi-value" class="value">-</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">Status:</span>
+                <span id="status-text" class="value status-wait">Papan Kosong</span>
+            </div>
+        </div>
+
+        <div class="board-container">
+            <div id="chessboard" class="board">
+                <!-- Grid catur digambar oleh script.js bagian Agung -->
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-acak" class="btn btn-primary">Acak Posisi Awal</button>
+            <button id="btn-jalan" class="btn btn-success">Mulai Pencarian (Jalan)</button>
+            <button id="btn-restart" class="btn btn-danger">Kosongkan Papan</button>
+        </div>
+        
+        <p class="note">Ikon Ratu: <span class="queen-icon">♛</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
